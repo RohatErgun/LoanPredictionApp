@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💰 Loan Eligibility Predictor</title>
+  <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>💰Loan Eligibility Predictor</h1>
+
+    <form id="loanForm">
+      <div class="form-group">
+        <select id="gender">
+          <option value="">Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <select id="married">
+          <option value="">Marital Status</option>
+          <option value="Yes">Married</option>
+          <option value="No">Single</option>
+        </select>
+
+        <input id="income" type="number" placeholder="Applicant Income" required>
+        <input id="coapplicant_income" type="number" placeholder="Coapplicant Income" required>
+        <input id="loan_amount" type="number" placeholder="Loan Amount" required>
+        <input id="loan_term" type="number" placeholder="Loan Term (months)" value="360" required>
+        <input id="credit_history" type="number" step="0.1" value="1" placeholder="Credit History (1 = good, 0 = bad)">
+
+        <select id="property_area">
+          <option value="">Property Area</option>
+          <option value="Urban">Urban</option>
+          <option value="Semiurban">Semiurban</option>
+          <option value="Rural">Rural</option>
+        </select>
+
+        <button type="submit">Check Eligibility</button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
