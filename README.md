@@ -40,3 +40,12 @@ based on user details.
 ### Future Improvements:
 Migrate database from SQLite to MongoDB
 Deploy backend using Render, Railway, or AWS Lambda
+
+### ScreenShots:
+* **Default Interface**
+![Default Interface](screenshots/default.png)
+* **Approved**
+![Default Interface](screenshots/approved.png)
+* **Rejected**
+![Default Interface](screenshots/rejected.png)
+
