@@ -1,0 +1,14 @@
+# created by virtualenv automatically
+*
+
+# auto generated when run init_db.py
+/backend/loan_predictions.db
+
+# Auto generated when running mode.py
+/model/label_encoder.pkl
+/model/loan_model.pkl
+/model/scaler.pkl
+
+# IntelliJ IDEA
+.idea/
+*.iml
