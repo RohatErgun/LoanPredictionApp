@@ -45,7 +45,24 @@ Deploy backend using Render, Railway, or AWS Lambda
 * **Default Interface**
 ![Default Interface](screenshots/default.png)
 * **Approved**
-![Default Interface](screenshots/approved.png)
+![Default Interface](screenshots/positive.png)
 * **Rejected**
-![Default Interface](screenshots/rejected.png)
+![Default Interface](screenshots/negative.png)
 
+### Example Input:
+- Gender: Male
+- Married: Yes
+- Income: 5000
+- Coapplicant Income: 2000
+- Loan Amount: 100
+- Loan Term: 360
+- Credit History: 1
+- Property Area: Urban
+
+**probability(example_input) ~= 85%**
+
+**Explanation**
+Combined income = 7000
+Loan amount = 100 ~= 14 x monthly income
+Clean credit history
+Stable urban area

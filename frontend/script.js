@@ -18,6 +18,7 @@ async function predictLoan() {
 
   const resultBox = document.getElementById("result");
   resultBox.innerHTML = "⏳ Checking eligibility...";
+  resultBox.style.color = "#fff";
 
   try {
     const response = await fetch("http://127.0.0.1:5000/predict", {
@@ -27,12 +28,16 @@ async function predictLoan() {
     });
 
     const result = await response.json();
+
+    let color = result.result.toLowerCase().includes("approve") ? "limegreen" : "red";
+
     resultBox.innerHTML = `
-      ✅ <strong>${result.result}</strong><br>
-      📊 Approval Probability: <strong>${result.approval_probability}%</strong>
+       <strong>${result.result}</strong><br>
+       Approval Probability: <strong>${result.approval_probability}%</strong>
     `;
+    resultBox.style.color = color;
   } catch (error) {
-    resultBox.innerHTML = "⚠️ Error connecting to the server.";
+    resultBox.innerHTML = "Error connecting to the server.";
     console.error(error);
   }
 }

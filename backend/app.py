@@ -64,7 +64,7 @@ def predict():
     # Predict
     prediction = model.predict(X_scaled)[0]
     probability = model.predict_proba(X_scaled)[0][1]
-    result = "✅ Loan Approved" if prediction == 1 else "❌ Loan Rejected"
+    result = "Loan Approved" if prediction == 1 else "Loan Rejected"
 
     # Save prediction in SQLite
     save_prediction(data, result, probability)
