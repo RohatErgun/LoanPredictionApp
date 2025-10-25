@@ -55,9 +55,9 @@ Deploy backend using Render, Railway, or AWS Lambda
 - Married: Yes
 - Income: 5000
 - Coapplicant Income: 2000
-- Loan Amount: 100
-- Loan Term: 360
-- Credit History: 1
+- Loan Amount: 100 as in (100.000)
+- Loan Term: 360 months
+- Credit History: 1 #0
 - Property Area: Urban
 
 * **probability(example_input) ~= 85%**
